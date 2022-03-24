@@ -12,7 +12,7 @@ export interface CustomRequest<T> extends Request {
   body: T;
 }
 
-export class MessageMatchBotRunner {
+export class GroupMeMessageMatchBotRunner {
   private _bots: IMatchBot[]
   constructor(bots: IMatchBot[]) {
     this._bots = bots;
