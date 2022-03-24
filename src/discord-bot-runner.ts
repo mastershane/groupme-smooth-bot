@@ -1,7 +1,5 @@
 import { IMatchBot } from "./smooth-bot";
 // import { Message } from "discord.js";
-/* tslint:disable-next-line */
-const {Message} = require('discord.js');
 
 export class DiscordBotRunner {
     private _bots: IMatchBot[]
@@ -11,6 +9,9 @@ export class DiscordBotRunner {
     }
 
     public respond(message: any) { // Message<boolean>
+      if(message.author.bot){
+        return;
+      }
       const content = message.content;
       if(content) {
         for(const bot of this._bots){

@@ -7,7 +7,7 @@ import { TriggerWordsBot, SmoothBot } from './smooth-bot';
 // import Discord from 'discord.js';
 import { DiscordBotRunner } from './discord-bot-runner';
 
-//For whatever reason tsc will report errors for the discord.js source code. Need to use this require to get past issue.
+// For whatever reason tsc will report errors for the discord.js source code. Need to use this require to get past issue.
 /* tslint:disable-next-line */
 const Discord = require('discord.js') ;
 
