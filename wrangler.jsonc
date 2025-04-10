@@ -1,5 +1,8 @@
 {
-    "name": "worker-name",
+    "name": "smooth-bot",
     "compatibility_date": "2025-04-10",
-    "main": "src/index.ts"
+    "main": "src/index.ts",
+    "compatibility_flags": [
+        "nodejs_compat"
+    ]
 }
